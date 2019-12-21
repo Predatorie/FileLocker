@@ -38,13 +38,18 @@ FUNCTION NET "Run"
     dnTIP  "Run"
 END_FUNCTION
 
-# User entry point
+# User entry points
 FUNCTION NET "RunUnlock"
     dnSPNG "Unlock16"
     dnLPNG "Unlock32"
     dnTIP  "RunUnlock"
 END_FUNCTION
 
+FUNCTION NET "RunSave"
+    dnSPNG "SaveLocked16"
+    dnLPNG "SaveLocked32"
+    dnTIP  "RunSave"
+END_FUNCTION
 
 #
 # EOF

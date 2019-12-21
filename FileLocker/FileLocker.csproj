@@ -107,6 +107,8 @@
   <ItemGroup>
     <Content Include="Resources\Assets\Lock16.png" />
     <Content Include="Resources\Assets\Lock32.png" />
+    <Content Include="Resources\Assets\SaveLocked16.png" />
+    <Content Include="Resources\Assets\SaveLocked32.png" />
     <Content Include="Resources\Assets\Unlock16.png" />
     <Content Include="Resources\Assets\Unlock32.png" />
   </ItemGroup>

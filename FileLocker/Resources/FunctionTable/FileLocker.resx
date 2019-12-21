@@ -125,12 +125,22 @@
     <value>..\Assets\Lock32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Run" xml:space="preserve">
-    <value>Applies the 'Read-only' attribute the current Mastercam file
+    <value>Applies the 'Read-only' attribute to the current Mastercam file
 Lock File</value>
   </data>
+  <data name="RunSave" xml:space="preserve">
+    <value>Removes the 'Read-only' attribute, saves, then applies the 'Read-only' attribute to the current Mastercam file
+Save Locked File</value>
+  </data>
   <data name="RunUnlock" xml:space="preserve">
-    <value>Removes the 'Read-only' property from the current Mastercam file
+    <value>Removes the 'Read-only' attribute from the current Mastercam file
 Unlock File</value>
+  </data>
+  <data name="SaveLocked16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\SaveLocked16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SaveLocked32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\SaveLocked32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Unlock16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Unlock16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

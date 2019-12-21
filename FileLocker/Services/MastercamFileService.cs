@@ -8,7 +8,7 @@ namespace FileLocker.Services
 {
     class MastercamFileService
     {
-        public void LockFile()
+        public void LockFile(bool displayDialog = true)
         {
             File.SetAttributes(FileManager.CurrentFileName, FileAttributes.ReadOnly);
 
@@ -16,9 +16,30 @@ namespace FileLocker.Services
                                   FileManager.CurrentFileName,
                                   "File Locked - Read-only attribute applied");
 
-            DialogManager.OK($"Read-only attribute applied to {Environment.NewLine}" +
-                             $"{FileManager.CurrentFileName}",
-                              "File Locked!");
+            if (displayDialog)
+            {
+                DialogManager.OK($"Read-only attribute applied to {Environment.NewLine}" +
+                                 $"{FileManager.CurrentFileName}",
+                                 "File Locked!");
+            }
+
+        }
+
+        public void UnlockFile(bool displayDialog = true)
+        {
+            File.SetAttributes(FileManager.CurrentFileName,
+                               File.GetAttributes(FileManager.CurrentFileName) & ~FileAttributes.ReadOnly);
+
+            EventManager.LogEvent(MessageSeverityType.InformationalMessage,
+                                  FileManager.CurrentFileName,
+                                  "File Unlocked - Read-only attribute removed");
+            if (displayDialog)
+            {
+                DialogManager.OK($"Read-only attribute removed from {Environment.NewLine}" +
+                                 $"{FileManager.CurrentFileName}",
+                                 "File Unlocked!");
+            }
+
         }
 
         public void UnlockFile()
@@ -27,12 +48,25 @@ namespace FileLocker.Services
                                File.GetAttributes(FileManager.CurrentFileName) & ~FileAttributes.ReadOnly);
 
             EventManager.LogEvent(MessageSeverityType.InformationalMessage,
-                                 FileManager.CurrentFileName,
-                                 "File Unlocked - Read-only attribute removed");
+                                  FileManager.CurrentFileName,
+                                  "File Unlocked - Read-only attribute removed");
 
             DialogManager.OK($"Read-only attribute removed from {Environment.NewLine}" +
                              $"{FileManager.CurrentFileName}",
                               "File Unlocked!");
+        }
+
+        public void SaveFile()
+        {
+            UnlockFile(false);
+
+            FileManager.Save(true);
+
+            EventManager.LogEvent(MessageSeverityType.InformationalMessage,
+                                  FileManager.CurrentFileName,
+                                 "File Saved");
+
+            LockFile(false);
         }
 
         public bool IsFileOnDisk()

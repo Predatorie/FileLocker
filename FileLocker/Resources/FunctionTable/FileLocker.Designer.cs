@@ -81,7 +81,7 @@ namespace FileLocker.Resources.FunctionTable {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Applies the &apos;Read-only&apos; attribute the current Mastercam file
+        ///   Looks up a localized string similar to Applies the &apos;Read-only&apos; attribute to the current Mastercam file
         ///Lock File.
         /// </summary>
         public static string Run {
@@ -91,12 +91,42 @@ namespace FileLocker.Resources.FunctionTable {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Removes the &apos;Read-only&apos; property from the current Mastercam file
+        ///   Looks up a localized string similar to Removes the &apos;Read-only&apos; attribute, saves, then applies the &apos;Read-only&apos; attribute to the current Mastercam file
+        ///Save Locked File.
+        /// </summary>
+        public static string RunSave {
+            get {
+                return ResourceManager.GetString("RunSave", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Removes the &apos;Read-only&apos; attribute from the current Mastercam file
         ///Unlock File.
         /// </summary>
         public static string RunUnlock {
             get {
                 return ResourceManager.GetString("RunUnlock", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SaveLocked16 {
+            get {
+                object obj = ResourceManager.GetObject("SaveLocked16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap SaveLocked32 {
+            get {
+                object obj = ResourceManager.GetObject("SaveLocked32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
