@@ -1,0 +1,50 @@
+﻿###############################################################################
+# NETHook function table			
+###############################################################################
+#
+# Name		: FileLocker.ft
+# NETHook 	: FileLocker.dll
+# Date		: 
+# Author	: 
+# Notes		: Contact sdk@mastercam.com for additional assistance.  
+#                 Attention: Mick George
+# Language	: C#
+#
+###############################################################################
+
+
+######################
+# ASSIGN A UNIQUE NAME
+######################
+APPLICATION "_File_Locker_"
+
+######################
+# NETHook LOCATION
+######################
+#
+FUNC_DLL   "CHOOKS\FileLocker.dll"
+RES_DLL    "SAME"
+dnRES_NAME "FileLocker.Resources.FunctionTable.FileLocker"
+CATEGORY   "FileLocker"
+
+##############################################################################
+# Public functions here
+##############################################################################
+#
+
+FUNCTION NET "Run"
+    dnSPNG "Lock16"
+    dnLPNG "Lock32"
+    dnTIP  "Run"
+END_FUNCTION
+
+# User entry point
+FUNCTION NET "RunUnlock"
+    dnSPNG "Unlock16"
+    dnLPNG "Unlock32"
+    dnTIP  "RunUnlock"
+END_FUNCTION
+
+
+#
+# EOF

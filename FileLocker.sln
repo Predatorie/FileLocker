@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileLocker", "FileLocker\FileLocker.csproj", "{C86C4EA3-C455-4E4C-B029-A3124B4E358A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C86C4EA3-C455-4E4C-B029-A3124B4E358A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86C4EA3-C455-4E4C-B029-A3124B4E358A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86C4EA3-C455-4E4C-B029-A3124B4E358A}.Debug|x64.ActiveCfg = Debug|x64
+		{C86C4EA3-C455-4E4C-B029-A3124B4E358A}.Debug|x64.Build.0 = Debug|x64
+		{C86C4EA3-C455-4E4C-B029-A3124B4E358A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86C4EA3-C455-4E4C-B029-A3124B4E358A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86C4EA3-C455-4E4C-B029-A3124B4E358A}.Release|x64.ActiveCfg = Release|x64
+		{C86C4EA3-C455-4E4C-B029-A3124B4E358A}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BDED2B91-BCD7-4EE7-90B0-00B89D8396D3}
+	EndGlobalSection
+EndGlobal
