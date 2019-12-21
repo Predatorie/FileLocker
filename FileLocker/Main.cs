@@ -49,14 +49,7 @@
         {
             var fileLocker = new MastercamFileService();
 
-            if (fileLocker.IsFileOnDisk())
-            {
-                fileLocker.SaveFile();
-            }
-            else
-            {
-                fileLocker.GenerateFileError();
-            }
+            fileLocker.SaveFile();
 
             return MCamReturn.NoErrors;
         }

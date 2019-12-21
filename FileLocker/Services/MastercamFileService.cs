@@ -42,31 +42,25 @@ namespace FileLocker.Services
 
         }
 
-        public void UnlockFile()
-        {
-            File.SetAttributes(FileManager.CurrentFileName,
-                               File.GetAttributes(FileManager.CurrentFileName) & ~FileAttributes.ReadOnly);
-
-            EventManager.LogEvent(MessageSeverityType.InformationalMessage,
-                                  FileManager.CurrentFileName,
-                                  "File Unlocked - Read-only attribute removed");
-
-            DialogManager.OK($"Read-only attribute removed from {Environment.NewLine}" +
-                             $"{FileManager.CurrentFileName}",
-                              "File Unlocked!");
-        }
-
         public void SaveFile()
         {
-            UnlockFile(false);
+            if (IsFileOnDisk())
+            {
+                UnlockFile(false);   
+            }
 
-            FileManager.Save(true);
+            if (FileManager.Save(true))
+            {
+                EventManager.LogEvent(MessageSeverityType.InformationalMessage,
+                                      FileManager.CurrentFileName,
+                                      "File Saved");
 
-            EventManager.LogEvent(MessageSeverityType.InformationalMessage,
-                                  FileManager.CurrentFileName,
-                                 "File Saved");
-
-            LockFile(false);
+                LockFile(false);
+            }
+            else
+            {
+                return;
+            }
         }
 
         public bool IsFileOnDisk()
