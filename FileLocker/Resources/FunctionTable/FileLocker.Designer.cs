@@ -63,6 +63,66 @@ namespace FileLocker.Resources.FunctionTable {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap autoSave16 {
+            get {
+                object obj = ResourceManager.GetObject("autoSave16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap autoSave32 {
+            get {
+                object obj = ResourceManager.GetObject("autoSave32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap autoSaveOff16 {
+            get {
+                object obj = ResourceManager.GetObject("autoSaveOff16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap autoSaveOff32 {
+            get {
+                object obj = ResourceManager.GetObject("autoSaveOff32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap autoSaveOn16 {
+            get {
+                object obj = ResourceManager.GetObject("autoSaveOn16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap autoSaveOn32 {
+            get {
+                object obj = ResourceManager.GetObject("autoSaveOn32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Lock16 {
             get {
                 object obj = ResourceManager.GetObject("Lock16", resourceCulture);
@@ -81,12 +141,62 @@ namespace FileLocker.Resources.FunctionTable {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap NewCancel24 {
+            get {
+                object obj = ResourceManager.GetObject("NewCancel24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap NewOK24 {
+            get {
+                object obj = ResourceManager.GetObject("NewOK24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Applies the &apos;Read-only&apos; attribute to the current Mastercam file
         ///Lock File.
         /// </summary>
         public static string Run {
             get {
                 return ResourceManager.GetString("Run", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable Auto Save
+        ///Auto Save Locked File.
+        /// </summary>
+        public static string RunAutoSaveOff {
+            get {
+                return ResourceManager.GetString("RunAutoSaveOff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enable Auto Save
+        ///Auto Save Locked File.
+        /// </summary>
+        public static string RunAutoSaveOn {
+            get {
+                return ResourceManager.GetString("RunAutoSaveOn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto Save Options
+        ///Auto Save Locked File.
+        /// </summary>
+        public static string RunAutoSaveOptions {
+            get {
+                return ResourceManager.GetString("RunAutoSaveOptions", resourceCulture);
             }
         }
         

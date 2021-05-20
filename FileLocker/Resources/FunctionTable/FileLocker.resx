@@ -118,15 +118,51 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="autoSave16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\autosave16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="autoSave32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\autosave32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="autoSaveOff16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\autosaveoff16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="autoSaveOff32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\autosaveoff32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="autoSaveOn16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\autosaveon16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="autoSaveOn32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\autosaveon32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Lock16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Lock16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Lock32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Lock32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NewCancel24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\newcancel24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewOK24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\newok24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Run" xml:space="preserve">
     <value>Applies the 'Read-only' attribute to the current Mastercam file
 Lock File</value>
+  </data>
+  <data name="RunAutoSaveOff" xml:space="preserve">
+    <value>Disable Auto Save
+Auto Save Locked File</value>
+  </data>
+  <data name="RunAutoSaveOn" xml:space="preserve">
+    <value>Enable Auto Save
+Auto Save Locked File</value>
+  </data>
+  <data name="RunAutoSaveOptions" xml:space="preserve">
+    <value>Auto Save Options
+Auto Save Locked File</value>
   </data>
   <data name="RunSave" xml:space="preserve">
     <value>Removes the 'Read-only' attribute, saves, then applies the 'Read-only' attribute to the current Mastercam file

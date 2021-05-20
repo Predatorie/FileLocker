@@ -22,7 +22,7 @@ APPLICATION "_File_Locker_"
 # NETHook LOCATION
 ######################
 #
-FUNC_DLL   "CHOOKS\FileLocker.dll"
+FUNC_DLL   "FileLocker.dll"
 RES_DLL    "SAME"
 dnRES_NAME "FileLocker.Resources.FunctionTable.FileLocker"
 CATEGORY   "FileLocker"
@@ -49,6 +49,24 @@ FUNCTION NET "RunSave"
     dnSPNG "SaveLocked16"
     dnLPNG "SaveLocked32"
     dnTIP  "RunSave"
+END_FUNCTION
+
+FUNCTION NET "AutoSaveOptions"
+    dnSPNG "autoSave16"
+    dnLPNG "autoSave32"
+    dnTIP  "RunAutoSaveOptions"
+END_FUNCTION
+
+FUNCTION NET "AutoSaveOn"
+    dnSPNG "autoSaveOn16"
+    dnLPNG "autoSaveOn32"
+    dnTIP  "RunAutoSaveOn"
+END_FUNCTION
+
+FUNCTION NET "AutoSaveOff"
+    dnSPNG "autoSaveOff16"
+    dnLPNG "autoSaveOff32"
+    dnTIP  "RunAutoSaveOff"
 END_FUNCTION
 
 #
